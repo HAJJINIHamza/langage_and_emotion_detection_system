@@ -1,6 +1,4 @@
-# CHATBOT EMOTION DETECTION
-
-Develop a model to detect emotions and implement it in a chatbot.
+# CHATBOT LANGUAGE & EMOTION DETECTION
 
 ## Table of contents
 
@@ -12,7 +10,7 @@ Develop a model to detect emotions and implement it in a chatbot.
 
 
 ## Introduction
-The project "Chatbot Emotion Detection" is part of the larger Inwi Chatbot project. Its goal is to equip the chatbot with the ability to detect users' emotions from conversations and provide responses that correspond to these emotions. To achieve this, we developed a system based on AI models (transformers) that can detect emotions from text in four languages: English, French, Arabic, Darija-Arab, and Darija-Latin.
+The project "Chatbot Language & Emotion Detection" is part of the larger Chatbot project. Its goal is to equip the chatbot with the ability to detect users' language then emotions from conversations and provide responses that correspond to these emotions. To achieve this, we developed a system based on AI models (transformers) that can detect emotions from text in four languages: English, French, Arabic, Darija-Arab, and Darija-Latin.
 
 ## Project structure
 The project has the following structure:
