@@ -1,0 +1,22 @@
+#Docker file for prediction pipeline 
+FROM python
+
+WORKDIR /predict_pipeline
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY src/ ./src/
+
+COPY artifacts/experiments_models/arabic_bert_local ./artifacts/experiments_models/arabic_bert_local
+
+COPY artifacts/experiments_models/xlm_roberta_model ./artifacts/experiments_models/xlm_roberta_model
+
+COPY artifacts/experiments_models/MultinomialNB.pkl ./artifacts/experiments_models/MultinomialNB.pkl
+
+COPY artifacts/tokenizers ./artifacts/tokenizers
+
+RUN python -m nltk.downloader punkt 
+
+CMD [ "python", "./src/pipeline/predict_pipeline.py" ]
